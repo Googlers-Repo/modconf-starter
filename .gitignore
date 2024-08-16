@@ -119,6 +119,8 @@ out
 
 .nuxt
 dist
+magisk/system/usr/share/mmrl/config/*
+magisk/module.prop
 
 # Gatsby files
 

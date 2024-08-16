@@ -1,0 +1,17 @@
+{
+    "metadata": {
+        "id": "module_id",
+        "name": "My Module Name",
+        "description": "The <name> does this and this thing!",
+        "versionName": "1.0.0",
+        "versionCode": "100",
+        "author": "Der_Googler",
+        "updateJson": null
+    },
+    "build": {
+        "modconf": "modconf/index.jsx"
+    },
+    "dist": {
+        "moduleFileName": "<id>-<versionName>_(<versionCode>).zip"
+    }
+}
