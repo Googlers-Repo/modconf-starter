@@ -1,0 +1,14 @@
+{
+  "name": "test",
+  "module": "index.jsx",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "build": "bun run bun.config.js"
+  },
+  "type": "module"
+}
