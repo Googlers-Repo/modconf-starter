@@ -4,9 +4,12 @@ import * as fs from "fs";
 import pkg from "./module.json";
 import archiver from "archiver";
 import ModFS from "modfs";
-import { stringify, parse } from "ini";
+import { stringify } from "ini";
 
 function archiveFolder(sourceDir, outputFilePath) {
+  if (!fs.existsSync("dist")) {
+    fs.mkdirSync("dist", { recursive: true });
+  }
   // Create a file to stream archive data to.
   const output = fs.createWriteStream(outputFilePath);
   const archive = archiver("zip", {
